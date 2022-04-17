@@ -11,4 +11,18 @@ int i, key;
 string a;
 string text;
 cout << "Enter a message to decrypt: ";
-
+in.getline(message, 1000);
+strcpy(b, message);
+cout << "Enter a known plain text message : ";
+cin >> text;
+for (key =1; key<=25;key++)
+{
+for(i = 0; message[i] != '\0'; ++i){
+ch = message[i];
+if(ch >= 'a' && ch <= 'z'){
+ch = ch - key;
+if(ch < 'a'){
+ch = ch + 'z' - 'a' + 1;
+}
+message[i] = ch;
+}
