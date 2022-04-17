@@ -26,3 +26,13 @@ ch = ch + 'z' - 'a' + 1;
 }
 message[i] = ch;
 }
+else if(ch >= 'A' && ch <= 'Z'){
+ch = ch - key;
+if(ch > 'a'){
+ch = ch + 'Z' - 'A' + 1;
+}
+message[i] = ch;
+}
+}
+a=message;
+size_t found = a.find(text);
