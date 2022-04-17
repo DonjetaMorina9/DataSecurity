@@ -36,3 +36,15 @@ message[i] = ch;
 }
 a=message;
 size_t found = a.find(text);
+ if (found != string::npos)
+{
+cout << "------------------------------------------------------------------------"<<endl;
+cout << "Decrypted message: " << message <<endl;
+cout << "the key: " << key <<endl;
+cout << "------------------------------------------------------------------------"<<endl;
+}
+ch = message[0];
+strcpy(message, b);
+}
+return 0;
+}
