@@ -1,1 +1,14 @@
+#include<iostream>
+#include <cstring>
+#include <string>
+ 
+using namespace std;
+ 
+int main()
+{
+char message[1000], ch, b[1000];
+int i, key;
+string a;
+string text;
+cout << "Enter a message to decrypt: ";
 
